@@ -6,3 +6,5 @@
 1. 在根目录与 /frontend 中 yarn install
 2. 在 /frontend 中 yarn dev
 3. 登录 localhost:3000 即可成功连接
+
+原版详见 https://github.com/Retrox-PGF/retrox
