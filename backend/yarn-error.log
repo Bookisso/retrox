@@ -1,0 +1,45 @@
+Arguments: 
+  D:\Program Files\nodejs\node.exe D:\Program Files\nodejs\node_modules\yarn\bin\yarn.js install
+
+PATH: 
+  C:\Users\Shuqin Wang\bin;D:\Program Files\Git\mingw64\bin;D:\Program Files\Git\usr\local\bin;D:\Program Files\Git\usr\bin;D:\Program Files\Git\usr\bin;D:\Program Files\Git\mingw64\bin;D:\Program Files\Git\usr\bin;C:\Users\Shuqin Wang\bin;F:\gurobi1002\win64\bin;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files\Microsoft MPI\Bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\OpenSSH;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\dotnet;C:\Program Files\Microsoft SQL Server\130\Tools\Binn;D:\Program Files (x86)\Microsoft Visual Studio\Shared\Python36_64\Scripts;F:\Ether;C:\Program Files (x86)\dotnet;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;C:\WINDOWS\System32\OpenSSH;F:\00 实习\cpp primer\mingw64\bin;D;E:\Program Files\Git\cmd;E:\Program Files\MySQL\MySQL Server 8.0\bin;E:\Program Files\Go\bin;D:\Program Files\Git\cmd;D:\nvm\nvm;D:\Program Files\nodejs;E:\Program Files\IPFS Desktop\resources\app.asar.unpacked\node_modules\kubo\kubo;C:\Users\Shuqin Wang\.cargo\bin;D:\Program Files (x86)\Microsoft Visual Studio\Shared\Python36_64\Scripts;C:\Users\Shuqin Wang\.dotnet\tools;D:\Program Files\Bandzip;E:\texlive\2021\bin\win32;D:\Program Files (x86)\Microsoft Visual Studio\Shared\Python36_64;C:\Users\Shuqin Wang\AppData\Local\Microsoft\WindowsApps;D:\Users\Shuqin Wang\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Shuqin Wang\go\bin;E:\Program Files\Go\bin;D:\nvm\nvm;D:\Program Files\nodejs;E:\Program Files\IPFS Desktop\resources\app.asar.unpacked\node_modules\kubo\kubo;D:\Program Files\Git\usr\bin\vendor_perl;D:\Program Files\Git\usr\bin\core_perl
+
+Yarn version: 
+  1.22.19
+
+Node version: 
+  16.15.1
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: EPERM: operation not permitted, unlink 'E:\01 实验室相关\07 毕设\retrox\backend\node_modules\keccak\prebuilds\win32-x64\node.napi.node'
+
+npm manifest: 
+  {
+    "name": "backend",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+      "hardhat": "^2.19.1"
+    },
+    "dependencies": {
+      "ethereum-waffle": "^3.4.4",
+      "ethers": "^5.6.4",
+      "yarn": "^1.22.19"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

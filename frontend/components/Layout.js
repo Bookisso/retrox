@@ -1,5 +1,5 @@
-import Header from './Header';
-import Aside from './Aside';
+import Header from "./Header";
+import Aside from "./Aside";
 
 export default function Layout(props) {
   return (

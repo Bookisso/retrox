@@ -1,8 +1,71 @@
-export const rounds = [
-  {name: 'Optimism Initial Round', id: 1, date:'5/10/2021', category:'Open', fundingPool: '$1M'},
-  {name: 'Ethereum Foundation', id: 3, date:'19/1/2022', category:'Open', fundingPool: '$1M'},
-  {name: 'Gates Foundation', id: 4, date:'23/2/2022', category:'Pandemic prevention and response', fundingPool: '$1M'},
-  {name: 'David Koch Foundation', id: 5, date:'12/3/2022', category:'Sustainability and environmental protection', fundingPool: '$1M'},
-  {name: 'OpenAI AI Saftey Round', id: 2, date:'2/4/2022', category:'AI Saftey', fundingPool: '$1M'},
-  {name: 'Blockchain For Humanity', id: 6, date:'23/4/2022', category:'OSS', fundingPool: '$4.2M'},
+// export const rounds = [
+//   {roundName: 'Optimism Initial Round', id: 1, date:'5/10/2021', category:'Open', fundingPool: '$1M'},
+//   {roundName: 'Ethereum Foundation', id: 3, date:'19/1/2022', category:'Open', fundingPool: '$1M'},
+//   {roundName: 'Gates Foundation', id: 4, date:'23/2/2022', category:'Pandemic prevention and response', fundingPool: '$1M'},
+//   {roundName: 'David Koch Foundation', id: 5, date:'12/3/2022', category:'Sustainability and environmental protection', fundingPool: '$1M'},
+//   {roundName: 'OpenAI AI Saftey Round', id: 2, date:'2/4/2022', category:'AI Saftey', fundingPool: '$1M'},
+//   {roundName: 'Blockchain For Humanity', id: 6, date:'23/4/2022', category:'OSS', fundingPool: '$4.2M'},
+// ];
+const unorderedNominationsData = require("../data/optimismNominations.json");
+const nominationsData = unorderedNominationsData.sort((a, b) =>
+  a.id < b.id ? 1 : b.id < a.id ? -1 : 0
+);
+
+export const roundsData = [
+  {
+    roundName: "Ethereum Foundation",
+    startBlockTimestamp: 1701632800,
+    funding: 800,
+    nominationDuration: 1604800,
+    votingDuration: 16991200,
+    description: "这是第一个",
+    badgeholders: [],
+    nominations: nominationsData.slice(0, 22),
+    nominationCounter: 22,
+    isSubmitted: false,
+    isDelegated: false,
+    address: "ipfs://QmdmQXB2mzChmMeKY47C43LxUdg1NDJ5MWcKMKxDu7RgQm",
+  },
+  {
+    roundName: "Gates Foundation",
+    startBlockTimestamp: 1701919200,
+    funding: 1000,
+    nominationDuration: 1604800,
+    votingDuration: 1604800,
+    description: "这是第二个",
+    badgeholders: [],
+    nominations: nominationsData.slice(22, 38),
+    nominationCounter: 16,
+    isSubmitted: false,
+    isDelegated: false,
+    address: "ipfs://QmcyyLvDzCrduuvGVUQEh1DzFvM7UWGfc9sUg87PjjYCw7",
+  },
+  {
+    roundName: "Blockchain For Humanity",
+    startBlockTimestamp: 1702005600,
+    funding: 2000,
+    nominationDuration: 1604800,
+    votingDuration: 1604800,
+    description: "这是第三个",
+    badgeholders: [],
+    nominations: nominationsData.slice(38, 63),
+    nominationCounter: 25,
+    isSubmitted: false,
+    isDelegated: false,
+    address: "ipfs://QmfRL5b6fPZ851F6E2ZUWX1kC4opXzq9QDhamvU4tJGuyR",
+  },
+  {
+    roundName: "OpenAI AI Saftey Round",
+    startBlockTimestamp: 1702505600,
+    funding: 666,
+    nominationDuration: 1604800,
+    votingDuration: 1604800,
+    description: "这是第四个",
+    badgeholders: [],
+    nominations: nominationsData.slice(63, 76),
+    nominationCounter: 13,
+    isSubmitted: false,
+    isDelegated: false,
+    address: "ipfs://QmSnuWmxptJZdLJpKRarxBMS2Ju2oANVrgbr2xWbie9b2D",
+  },
 ];

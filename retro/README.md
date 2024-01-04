@@ -1,9 +1,9 @@
 To deploy contract to testnet:
-`yarn hardhat run scripts/sample-scripts.js --network optimism-kovan`
+`yarn hardhat run scripts/sample-script.js --network optimism-goerli`
 
 ### To run tests:
 
-First In separate terminal: 
+First In separate terminal:
 run `npx hardhat node`
 
 Then:
