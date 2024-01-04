@@ -14,6 +14,9 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
 
+## 数据说明
+- 资助轮次的初始信息在 data/rounds.js 中，如果资助轮次过期，需要修改 duration 或开始时的时间戳，否则会出现报错。
+
 
 ## Learn More
 
